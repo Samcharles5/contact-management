@@ -15,7 +15,7 @@ app.use(cors());
 dbConfig();
 
 // Routes
-// app.use('/contacts', contactRoutes);
+app.use('/contacts', contactRoutes);
 
 
 app.get('/todos', async (req, res) => {

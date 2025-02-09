@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/contact_management', {
+        await mongoose.connect('mongodb+srv://sc240843:j76t0UPG1fHcBc8C@contact.iwmfz.mongodb.net/contacts?retryWrites=true&w=majority&appName=contact', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });

@@ -15,7 +15,17 @@ app.use(cors());
 dbConfig();
 
 // Routes
-app.use('/', contactRoutes);
+// app.use('/contacts', contactRoutes);
+
+
+app.get('/todos', async (req, res) => {
+    try {
+        res.send('Hello World');
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: error.message });
+    }
+});
 
 
 // Start the server

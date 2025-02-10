@@ -2,7 +2,7 @@
 
 A full-featured Contact Management Application built using the **MERN stack**. While the original backend assessment focused solely on developing the backend, I took the opportunity to also build a complete frontend for a seamless user experience. The application enables users to create, read, update, delete, and search contacts.
 
-**Live Demo Check it out:** ([LIVE](https://contact-management-frontend-xi.vercel.app/)m)
+**Live Demo Check it out:** ([LIVE](https://contact-management-frontend-xi.vercel.app/))
 
 ---
 
@@ -13,11 +13,6 @@ A full-featured Contact Management Application built using the **MERN stack**. W
 - [API Endpoints](#api-endpoints)
 - [Tech Stack](#tech-stack)
 - [Setup & Installation](#setup--installation)
-- [Running the Application](#running-the-application)
-- [Testing](#testing)
-- [Thought Process & Design Considerations](#thought-process--design-considerations)
-- [Additional Notes](#additional-notes)
-- [License](#license)
 
 ---
 

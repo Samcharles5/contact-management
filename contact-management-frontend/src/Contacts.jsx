@@ -25,7 +25,6 @@ export default function Contacts() {
   const [searchError, setSearchError] = useState("");
 
   const apiUrl = process.env.REACT_APP_BACKEND_URL;
-  console.log("API URL:", apiUrl);
 
   // Create a new contact (includes phoneNumber and address)
   const handleSubmit = () => {
@@ -184,14 +183,14 @@ export default function Contacts() {
   };
 
   return (
-    <>
-      <div className="row p-3 bg-primary text-light text-center">
+    <div className="">
+      <div className="row p-4 text-light text-center">
         <h1>Contact Management System</h1>
       </div>
-      <div className="container">
+      <div className="container p-4 mb-2 rounded">
         {/* Create New Contact Section */}
         <div className="row mt-3">
-          <h3>Create New Contact</h3>
+          <h3 className="pb-2">Create New Contact</h3>
           {message && <p className="text-success">{message}</p>}
           <div className="form-group d-flex gap-2">
             <input
@@ -230,7 +229,7 @@ export default function Contacts() {
         </div>
 
         {/* Search Single Contact Section */}
-        <div className="row mt-3">
+        {/* <div className="row mt-3">
           <h3>Search Contact by ID</h3>
           <div className="form-group d-flex gap-2">
             <input
@@ -262,17 +261,17 @@ export default function Contacts() {
               </p>
             </div>
           )}
-        </div>
+        </div> */}
 
         {/* All Contacts Section */}
-        <div className="row mt-3">
-          <h3>All Contacts</h3>
+        <div className="row m-5 mb-5">
+          <h3 className="mb-2">All Contacts</h3>
           <div className="col-md-8">
             <ul className="list-group">
               {contacts.map((contact) => (
                 <li
                   key={contact._id}
-                  className="list-group-item bg-light d-flex justify-content-between align-items-center my-2"
+                  className="list-group-item d-flex justify-content-between align-items-center my-2 allcon"
                 >
                   <div className="d-flex flex-column me-2">
                     {editId !== -1 && editId === contact._id ? (
@@ -347,6 +346,6 @@ export default function Contacts() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

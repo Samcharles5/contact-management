@@ -346,6 +346,7 @@ export default function Contacts() {
           </div>
         </div>
       </div>
+       <div className="position-fixed bottom-0 start-50 translate-middle-x p-3 anker m-5"> <b>Check out my portfolio <a href="https://samcharles-sde.web.app/">Link</a></b></div>
     </div>
   );
 }

@@ -4,8 +4,19 @@
   background: #65ABE8;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
 .container{
   background: #C1DBF2;
+}
+.anker{
+  background: #C1DBF2;
+  border-radius: 30px 3px;
 }
 
 .allcon{

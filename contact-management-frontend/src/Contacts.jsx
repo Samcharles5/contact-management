@@ -228,41 +228,6 @@ export default function Contacts() {
           {error && <p className="text-danger mt-3">{error}</p>}
         </div>
 
-        {/* Search Single Contact Section */}
-        {/* <div className="row mt-3">
-          <h3>Search Contact by ID</h3>
-          <div className="form-group d-flex gap-2">
-            <input
-              placeholder="Contact ID"
-              onChange={(e) => setSearchId(e.target.value)}
-              value={searchId}
-              className="form-control"
-              type="text"
-            />
-            <button className="btn btn-primary" onClick={handleSearch}>
-              Search
-            </button>
-          </div>
-          {searchError && <p className="text-danger">{searchError}</p>}
-          {searchedContact && (
-            <div className="mt-2">
-              <h4>Contact Details</h4>
-              <p>
-                <strong>Name:</strong> {searchedContact.name}
-              </p>
-              <p>
-                <strong>Email:</strong> {searchedContact.email}
-              </p>
-              <p>
-                <strong>phoneNumber:</strong> {searchedContact.phoneNumber}
-              </p>
-              <p>
-                <strong>Address:</strong> {searchedContact.address}
-              </p>
-            </div>
-          )}
-        </div> */}
-
         {/* All Contacts Section */}
         <div className="row m-5 mb-5">
           <h3 className="mb-2">All Contacts</h3>
@@ -346,7 +311,6 @@ export default function Contacts() {
           </div>
         </div>
       </div>
-       <div className="position-fixed bottom-0 start-50 translate-middle-x p-3 anker m-5"> <b>Check out my portfolio <a href="https://samcharles-sde.web.app/">Link</a></b></div>
     </div>
   );
 }
